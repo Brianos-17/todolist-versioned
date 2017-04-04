@@ -33,3 +33,10 @@
   </div>
   <button class="ui blue submit button">Add Todo</button>
 </form>
+
+#{list items:todolist, as:'todo'}
+<tr>
+  <td> ${todo.title} </td>
+  <td> <a href="/dashboard/deletetodo/${todo.id} " class="ui tiny red button"> Delete </a>
+  </td>
+  #{/list}
